@@ -1,0 +1,15 @@
+version: '3.1'
+
+services:
+
+  db:
+    image: postgres
+    command: postgres -c 'shared_buffers=512MB' -c 'max_connections=2000'
+    restart: always
+    environment:
+      POSTGRES_USER: dameng
+      POSTGRES_PASSWORD: pythonic
+    ports:
+      - 5432:5432
+    volumes:
+      - /var/lib/postgresql/data

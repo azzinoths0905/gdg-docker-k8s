@@ -1,0 +1,27 @@
+{
+  "name": "gdg-docker-k8s",
+  "version": "1.0.0",
+  "description": "Cases and notes of Docker and Kubernetes courses at GDG Shanghai",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Azzinothz/gdg-docker-k8s.git"
+  },
+  "author": "Ron You",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Azzinothz/gdg-docker-k8s/issues"
+  },
+  "homepage": "https://github.com/Azzinothz/gdg-docker-k8s#readme",
+  "devDependencies": {
+    "cz-conventional-changelog": "^3.0.2"
+  },
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
+  }
+}
