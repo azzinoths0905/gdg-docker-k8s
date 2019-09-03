@@ -1,0 +1,80 @@
+openapi: "3.0.0"
+
+info:
+  title: Hello World
+  version: "1.0"
+servers:
+  - url: http://0.0.0.0:9090/v1.0
+
+paths:
+  /posts:
+    post:
+      summary: post
+      description: post
+      operationId: api.all
+      responses:
+        200:
+          description: blog response
+          content:
+            text/plain:
+              schema:
+                type: object
+
+  # /posts:
+  #   put:
+  #     summary: put
+  #     description: put
+  #     operationId: api.add_new_post
+  #     parameters:
+  #       - name: post
+  #         in: body
+  #         required: True
+  #         schema:
+  #           type: object
+  #           properties:
+  #               title:
+  #                 type: string
+  #                 required: True
+  #               content:
+  #                 type: string
+  #                 required: True
+  #               username:
+  #                 type: string
+  #                 required: True
+  #               password:
+  #                 type: string
+  #                 required: True
+        
+  #     responses:
+  #       201:
+  #         description: add post
+  #         content:
+  #           text/plain:
+  #             schema:
+  #               type: string
+
+  # /users:
+  #   put:
+  #     summary: put
+  #     description: put
+  #     operationId: api.add_new_user
+  #     parameters:
+  #       - name: user
+  #         in: body
+  #         required: True
+  #         schema:
+  #           type: object
+  #           properties:
+  #               username:
+  #                 type: string
+  #                 required: True
+  #               password:
+  #                 type: string
+  #                 required: True
+  #     responses:
+  #       201:
+  #         description: add post
+  #         content:
+  #           text/plain:
+  #             schema:
+  #               type: string
