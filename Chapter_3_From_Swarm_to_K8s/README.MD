@@ -261,4 +261,24 @@ $ docker service create --replicas 3 -p 5000:5000 --name friendly3 -e HOSTNAME="
 
 ![Screen Shot 2019-09-03 at 10.04.24 AM.png](https://i.loli.net/2019/09/03/pVhrF4odb715x6f.png)
 
+## STEP 5: 用Portainer可视化管理Swarm集群
+
+回到`manager`节点，现在来通过`docker stack`部署`Portainer`：
+
+```shell
+$ curl -L https://downloads.portainer.io/portainer-agent-stack.yml -o portainer-agent-stack.yml
+$ docker stack deploy --compose-file=portainer-agent-stack.yml portainer
+```
+
+完成后，我们可以通过`:9000`端口来访问`Portainer`：
+
+![Screen Shot 2019-09-03 at 3.10.54 PM.png](https://i.loli.net/2019/09/03/VXd168ao3wKrbFD.png)
+
+这里有丰富的功能，可以方便我们可视化地操作swarm集群
+
+![Screen Shot 2019-09-03 at 3.11.01 PM.png](https://i.loli.net/2019/09/03/7dYZpeNB6fW2StI.png)
+
+![Screen Shot 2019-09-03 at 3.11.48 PM.png](https://i.loli.net/2019/09/03/Lg7Hh8VkfFTtiN5.png)
+
+![Screen Shot 2019-09-03 at 3.11.07 PM.png](https://i.loli.net/2019/09/03/Vc4z1jirJ7hGQva.png)
 
