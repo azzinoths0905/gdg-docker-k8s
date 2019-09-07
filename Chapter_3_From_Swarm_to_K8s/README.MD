@@ -1,4 +1,4 @@
-# 通过Docker Swarm部署friendlyhello:v4
+# 通过Docker Swarm部署简单服务
 
 本篇教程会介绍如何使用`docker swarm`进行容器的编排与分发friendlyhello:v4，这一服务可以通过浏览器访问，获取当前节点的Hostname，最终效果如下：
 
